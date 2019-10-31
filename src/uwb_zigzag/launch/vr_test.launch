@@ -1,0 +1,22 @@
+﻿<launch>
+  <!--rosserial-->
+  <node pkg="rosserial_python" type="serial_node.py" name="stm32_core" output="screen" respawn="true">
+    <param name="port" value="/dev/ttyS3"/>
+    <param name="baud" value="115200"/>
+  </node>
+
+  <!--vision_random-->
+  <!-- <node pkg="vision_zigzag" type="vision_proc" name="vision_proc" output="screen"> -->
+  <node pkg="vision_zigzag" type="vision_test" name="vision_test" output="screen">
+  </node>
+
+  <!--motion-->
+  <node pkg="vision_zigzag" type="vision_random" name="vision_random" output="screen">
+  </node>
+
+  <!--<rosparam file="$(find vision_zigzag)/config/vision_param.yaml"  command="load"/> -->
+
+  <!-- odom publisher node -->
+  <!-- <node pkg="vision_zigzag" type="odom_publisher" name="odom_publisher" output="screen"/>  -->
+
+</launch>

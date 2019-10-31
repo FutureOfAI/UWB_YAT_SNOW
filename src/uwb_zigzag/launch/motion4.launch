@@ -1,0 +1,27 @@
+﻿<launch>
+  <!--rosserial-->
+  <node pkg="rosserial_python" type="serial_node.py" name="stm32_core" output="screen" respawn="true">
+    <param name="port" value="/dev/stm32"/>
+    <param name="baud" value="115200"/>
+  </node>
+
+  <!--motion_control-->
+  <node pkg="uwb_zigzag" type="motion_uwb" name="motion_uwb" output="screen" >
+    <rosparam file="$(find uwb_zigzag)/config/mower_param.yaml"  command="load"/>
+  </node>
+  
+  <!--location-->
+  <node pkg="uwb_zigzag" type="location_uwb" name="location_uwb" output="screen" >
+    <rosparam file="$(find uwb_zigzag)/config/baseStationPosition.yaml"  command="load"/>
+  </node>
+  
+  <!--uwbReader-->
+  <node pkg="uwb_zigzag" type="uwb_reader" name="uwb_reader" output="screen"/>
+
+  <!--sensor initial
+  <node pkg="uwb_zigzag" type="initialization_uwb" name="initialization_uwb" output="screen" >
+    <rosparam file="$(find uwb_zigzag)/config/mower_param.yaml"  command="load"/>
+  </node>
+  -->
+
+</launch>

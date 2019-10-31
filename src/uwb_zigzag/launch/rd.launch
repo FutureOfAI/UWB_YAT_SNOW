@@ -1,0 +1,19 @@
+<launch>
+  <!--rosserial-->
+  <node pkg="rosserial_python" type="serial_node.py" name="stm32_core" output="screen">
+    <!--<param name="port" value="/dev/ttyUSB0"/>-->
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baud" value="115200"/>
+  </node>
+  
+  <!--rac_gps-->
+  <node pkg="rac_serial" type="rac" name="rac" output="screen" launch-prefix="xterm -e"/>
+
+ <!-- odom publisher node -->
+  <node pkg="zigzag_mower" type="zig_odom_publisher" name="zig_odom_publisher" output="screen"/>
+
+  <!--<node pkg="rviz" type="rviz" name="rviz" args="-d $(find zigzag_mower)/launch/rd.rviz"/>-->
+
+  <!--random_mower-->
+  <node pkg="zigzag_mower" type="zigzagMower" name="zigzagMower" output="screen" />
+</launch>

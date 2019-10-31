@@ -1,0 +1,16 @@
+<launch>
+ <!--rosserial-->
+  <node pkg="rosserial_python" type="serial_node.py" name="stm32_core" output="screen" respawn="true">
+    <param name="port" value="/dev/stm32"/>
+    <param name="baud" value="115200"/>
+  </node>
+  
+    <!-- joy node -->
+  <node respawn="true" pkg="joy" type="joy_node" name="joy" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+    <param name="deadzone" value="0.12" />
+  </node>
+
+ <node pkg="zigzag_mower" type="calibrate_uwb" name="calibrate_uwb" output="screen"/>
+
+</launch>
