@@ -345,11 +345,15 @@ int main(int argc, char **argv)
 	buf_init((buf_type *)&imu_buf_contr_op ,(uint8_t  *)imu_buf,IMU_BUF_SIZE);
 
 	if(my_serial.isOpen())
-	cout << " serial open success" << endl;
+	{
+	  ROS_INFO("imu serial open success");
+	}
 	else
-	cout << " serial open failed" << endl;
+	{
+	  ROS_INFO("imu serial open failed");
+	}
 
-	cout <<"starting to publish No.2 imu topic...\n";
+	ROS_INFO("starting to publish imu topic...\n");
 
 	string result;
 	uint8_t  data;

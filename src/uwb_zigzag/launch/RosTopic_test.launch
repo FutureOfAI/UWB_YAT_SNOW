@@ -1,0 +1,12 @@
+<launch>
+
+  <!--uwbReader-->
+  <node pkg="uwb_zigzag" type="uwb_reader" name="uwb_reader" output="screen"/>
+
+  <!--imuReader-->
+  <node pkg="uwb_zigzag" type="imu_reader" name="imu_reader" output="screen"/> 
+
+  <!--uwbReader-->
+  <node pkg="uwb_zigzag" type="RosTopic_test" name="RosTopic_test" output="screen"/>  
+
+</launch>

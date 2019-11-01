@@ -273,11 +273,11 @@ int main(int argc, char *argv[])
 
 	if(my_serial.isOpen())
 	{
-		ROS_INFO(" serial open success");
+		ROS_INFO("uwb serial open success");
 	}
 	else
 	{
-		ROS_INFO(" serial open failed");
+		ROS_INFO("uwb serial open failed");
 	}
 
 	ROS_INFO("starting to publish uwb topic...\n");

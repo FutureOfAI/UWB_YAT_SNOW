@@ -166,21 +166,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-uwb_zigzag/CMakeFiles/imuRawData.dir/rule:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 uwb_zigzag/CMakeFiles/imuRawData.dir/rule
-.PHONY : uwb_zigzag/CMakeFiles/imuRawData.dir/rule
-
-# Convenience name for target.
-imuRawData: uwb_zigzag/CMakeFiles/imuRawData.dir/rule
-
-.PHONY : imuRawData
-
-# fast build rule for target.
-imuRawData/fast:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/imuRawData.dir/build.make uwb_zigzag/CMakeFiles/imuRawData.dir/build
-.PHONY : imuRawData/fast
-
-# Convenience name for target.
 uwb_zigzag/CMakeFiles/actionlib_generate_messages_py.dir/rule:
 	cd /home/rock/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 uwb_zigzag/CMakeFiles/actionlib_generate_messages_py.dir/rule
 .PHONY : uwb_zigzag/CMakeFiles/actionlib_generate_messages_py.dir/rule
@@ -286,21 +271,6 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
-uwb_zigzag/CMakeFiles/uwbRawData.dir/rule:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 uwb_zigzag/CMakeFiles/uwbRawData.dir/rule
-.PHONY : uwb_zigzag/CMakeFiles/uwbRawData.dir/rule
-
-# Convenience name for target.
-uwbRawData: uwb_zigzag/CMakeFiles/uwbRawData.dir/rule
-
-.PHONY : uwbRawData
-
-# fast build rule for target.
-uwbRawData/fast:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/uwbRawData.dir/build.make uwb_zigzag/CMakeFiles/uwbRawData.dir/build
-.PHONY : uwbRawData/fast
-
-# Convenience name for target.
 uwb_zigzag/CMakeFiles/tf_generate_messages_eus.dir/rule:
 	cd /home/rock/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 uwb_zigzag/CMakeFiles/tf_generate_messages_eus.dir/rule
 .PHONY : uwb_zigzag/CMakeFiles/tf_generate_messages_eus.dir/rule
@@ -374,6 +344,21 @@ map_uwb: uwb_zigzag/CMakeFiles/map_uwb.dir/rule
 map_uwb/fast:
 	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/map_uwb.dir/build.make uwb_zigzag/CMakeFiles/map_uwb.dir/build
 .PHONY : map_uwb/fast
+
+# Convenience name for target.
+uwb_zigzag/CMakeFiles/RosTopic_test.dir/rule:
+	cd /home/rock/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 uwb_zigzag/CMakeFiles/RosTopic_test.dir/rule
+.PHONY : uwb_zigzag/CMakeFiles/RosTopic_test.dir/rule
+
+# Convenience name for target.
+RosTopic_test: uwb_zigzag/CMakeFiles/RosTopic_test.dir/rule
+
+.PHONY : RosTopic_test
+
+# fast build rule for target.
+RosTopic_test/fast:
+	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/RosTopic_test.dir/build.make uwb_zigzag/CMakeFiles/RosTopic_test.dir/build
+.PHONY : RosTopic_test/fast
 
 # Convenience name for target.
 uwb_zigzag/CMakeFiles/tf_generate_messages_lisp.dir/rule:
@@ -524,6 +509,33 @@ plan_uwb: uwb_zigzag/CMakeFiles/plan_uwb.dir/rule
 plan_uwb/fast:
 	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/plan_uwb.dir/build.make uwb_zigzag/CMakeFiles/plan_uwb.dir/build
 .PHONY : plan_uwb/fast
+
+src/RosTopic_test.o: src/RosTopic_test.cpp.o
+
+.PHONY : src/RosTopic_test.o
+
+# target to build an object file
+src/RosTopic_test.cpp.o:
+	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/RosTopic_test.dir/build.make uwb_zigzag/CMakeFiles/RosTopic_test.dir/src/RosTopic_test.cpp.o
+.PHONY : src/RosTopic_test.cpp.o
+
+src/RosTopic_test.i: src/RosTopic_test.cpp.i
+
+.PHONY : src/RosTopic_test.i
+
+# target to preprocess a source file
+src/RosTopic_test.cpp.i:
+	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/RosTopic_test.dir/build.make uwb_zigzag/CMakeFiles/RosTopic_test.dir/src/RosTopic_test.cpp.i
+.PHONY : src/RosTopic_test.cpp.i
+
+src/RosTopic_test.s: src/RosTopic_test.cpp.s
+
+.PHONY : src/RosTopic_test.s
+
+# target to generate assembly for a file
+src/RosTopic_test.cpp.s:
+	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/RosTopic_test.dir/build.make uwb_zigzag/CMakeFiles/RosTopic_test.dir/src/RosTopic_test.cpp.s
+.PHONY : src/RosTopic_test.cpp.s
 
 src/astar.o: src/astar.cpp.o
 
@@ -849,60 +861,6 @@ src/plan_uwb.cpp.s:
 	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/plan_uwb.dir/build.make uwb_zigzag/CMakeFiles/plan_uwb.dir/src/plan_uwb.cpp.s
 .PHONY : src/plan_uwb.cpp.s
 
-src/serial_imu.o: src/serial_imu.cpp.o
-
-.PHONY : src/serial_imu.o
-
-# target to build an object file
-src/serial_imu.cpp.o:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/imuRawData.dir/build.make uwb_zigzag/CMakeFiles/imuRawData.dir/src/serial_imu.cpp.o
-.PHONY : src/serial_imu.cpp.o
-
-src/serial_imu.i: src/serial_imu.cpp.i
-
-.PHONY : src/serial_imu.i
-
-# target to preprocess a source file
-src/serial_imu.cpp.i:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/imuRawData.dir/build.make uwb_zigzag/CMakeFiles/imuRawData.dir/src/serial_imu.cpp.i
-.PHONY : src/serial_imu.cpp.i
-
-src/serial_imu.s: src/serial_imu.cpp.s
-
-.PHONY : src/serial_imu.s
-
-# target to generate assembly for a file
-src/serial_imu.cpp.s:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/imuRawData.dir/build.make uwb_zigzag/CMakeFiles/imuRawData.dir/src/serial_imu.cpp.s
-.PHONY : src/serial_imu.cpp.s
-
-src/serial_uwb.o: src/serial_uwb.cpp.o
-
-.PHONY : src/serial_uwb.o
-
-# target to build an object file
-src/serial_uwb.cpp.o:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/uwbRawData.dir/build.make uwb_zigzag/CMakeFiles/uwbRawData.dir/src/serial_uwb.cpp.o
-.PHONY : src/serial_uwb.cpp.o
-
-src/serial_uwb.i: src/serial_uwb.cpp.i
-
-.PHONY : src/serial_uwb.i
-
-# target to preprocess a source file
-src/serial_uwb.cpp.i:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/uwbRawData.dir/build.make uwb_zigzag/CMakeFiles/uwbRawData.dir/src/serial_uwb.cpp.i
-.PHONY : src/serial_uwb.cpp.i
-
-src/serial_uwb.s: src/serial_uwb.cpp.s
-
-.PHONY : src/serial_uwb.s
-
-# target to generate assembly for a file
-src/serial_uwb.cpp.s:
-	cd /home/rock/catkin_ws/build && $(MAKE) -f uwb_zigzag/CMakeFiles/uwbRawData.dir/build.make uwb_zigzag/CMakeFiles/uwbRawData.dir/src/serial_uwb.cpp.s
-.PHONY : src/serial_uwb.cpp.s
-
 src/uwb_reader.o: src/uwb_reader.cpp.o
 
 .PHONY : src/uwb_reader.o
@@ -940,7 +898,6 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... imuRawData"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... rebuild_cache"
 	@echo "... actionlib_generate_messages_nodejs"
@@ -949,13 +906,13 @@ help:
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_cpp"
-	@echo "... uwbRawData"
 	@echo "... tf_generate_messages_eus"
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... motion_uwb"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... map_uwb"
 	@echo "... edit_cache"
+	@echo "... RosTopic_test"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... install"
@@ -967,6 +924,9 @@ help:
 	@echo "... imu_reader"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... plan_uwb"
+	@echo "... src/RosTopic_test.o"
+	@echo "... src/RosTopic_test.i"
+	@echo "... src/RosTopic_test.s"
 	@echo "... src/astar.o"
 	@echo "... src/astar.i"
 	@echo "... src/astar.s"
@@ -1003,12 +963,6 @@ help:
 	@echo "... src/plan_uwb.o"
 	@echo "... src/plan_uwb.i"
 	@echo "... src/plan_uwb.s"
-	@echo "... src/serial_imu.o"
-	@echo "... src/serial_imu.i"
-	@echo "... src/serial_imu.s"
-	@echo "... src/serial_uwb.o"
-	@echo "... src/serial_uwb.i"
-	@echo "... src/serial_uwb.s"
 	@echo "... src/uwb_reader.o"
 	@echo "... src/uwb_reader.i"
 	@echo "... src/uwb_reader.s"

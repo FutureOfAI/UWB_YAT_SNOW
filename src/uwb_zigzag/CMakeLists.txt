@@ -58,13 +58,17 @@ add_executable(plan_uwb src/plan_uwb.cpp src/calibinit.cpp src/calib.cpp src/con
 add_dependencies(plan_uwb ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(plan_uwb ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
-add_executable(imuRawData src/serial_imu.cpp) 
-add_dependencies(imuRawData ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(imuRawData  ${catkin_LIBRARIES})
+add_executable(RosTopic_test src/RosTopic_test.cpp) 
+add_dependencies(RosTopic_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(RosTopic_test  ${catkin_LIBRARIES})
 
-add_executable(uwbRawData src/serial_uwb.cpp) 
-add_dependencies(uwbRawData ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(uwbRawData  ${catkin_LIBRARIES})
+#add_executable(imuRawData src/serial_imu.cpp) 
+#add_dependencies(imuRawData ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#target_link_libraries(imuRawData  ${catkin_LIBRARIES})
+
+#add_executable(uwbRawData src/serial_uwb.cpp) 
+#add_dependencies(uwbRawData ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#target_link_libraries(uwbRawData  ${catkin_LIBRARIES})
 
 # add_executable(joycontrol src/joycontrol.cpp)
 # target_link_libraries(joycontrol ${catkin_LIBRARIES})
