@@ -47,7 +47,7 @@ void Save_Data(RawData *db, uint16_t cnt)
             db[i].distance[0], db[i].distance[1], db[i].distance[2], db[i].distance[3], \
             db[i].dt); 
     }
-    // fout<<"Save data test."<<endl;
+    fclose(fp); // close the file
 }
 
 // imu data subscribe request
